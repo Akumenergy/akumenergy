@@ -91,22 +91,13 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerHTML = '<span>Відправка...</span><i class="fas fa-spinner fa-spin"></i>';
             showFormStatus('Відправка повідомлення...', 'loading');
             
-            // Submit to Formspree
+            // Submit to Formspree using FormData (recommended method)
             fetch('https://formspree.io/f/mldooorq', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify({
-                    name: name,
-                    email: email,
-                    phone: phone || '',
-                    company: company || '',
-                    subject: subject || '',
-                    message: message,
-                    privacy: privacy ? 'Так' : 'Ні'
-                })
+                body: formData
             })
             .then(response => {
                 if (response.ok) {
