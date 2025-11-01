@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showFormStatus('Відправка повідомлення...', 'loading');
             
             // Submit to Formspree
-            fetch('https://formspree.io/f/mzzvjvlg', {
+            fetch('https://formspree.io/f/mldooorq', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
