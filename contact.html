@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АКУМ ЕНЕРДЖІ - Контакти</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                <span class="logo-text">АКУМ ЕНЕРДЖІ</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="about.html" class="nav-link">Про нас</a></li>
+                <li><a href="services.html" class="nav-link">Трейдерська діяльність</a></li>
+                <li><a href="documents.html" class="nav-link">Документи</a></li>
+                <li><a href="contact.html" class="nav-link active">Контакти</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Контакти</h1>
+            <p class="page-subtitle">Зв'яжіться з нами для отримання додаткової інформації</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Контактна інформація</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Наша адреса</h4>
+                            <p>Україна, 04071, місто Київ, вул.Набережно-Лугова, будинок 4</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Години роботи</h4>
+                            <p>Понеділок-П'ятниця з 09.00 до 18.00</p>
+                            <p>Вихідні дні: субота та неділя</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Відповідальна особа</h4>
+                            <p>Керівник: Воропаєв Сергій Володимирович</p>
+                            <p>Телефон: +380508128221</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Юридична інформація</h4>
+                            <p>Код ЄДРПОУ: 46100019</p>
+                            <p>Код діяльності: 35.14</p>
+                            <p>Основний вид діяльності: 35.14 Торгівля електроенергією</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Форма зворотного зв'язку</h3>
+                    <p>Заповніть форму нижче, і ми зв'яжемося з вами найближчим часом</p>
+                    
+                    <form action="https://formspree.io/f/mzzvjvlg" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я *</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email адреса *</label>
+                            <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Номер телефону</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Введіть ваш номер телефону">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Назва компанії</label>
+                            <input type="text" id="company" name="company" placeholder="Введіть назву компанії">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема звернення</label>
+                            <select id="subject" name="subject">
+                                <option value="">Оберіть тему</option>
+                                <option value="consultation">Консультація</option>
+                                <option value="cooperation">Співпраця</option>
+                                <option value="pricing">Питання щодо цін</option>
+                                <option value="technical">Технічні питання</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Повідомлення *</label>
+                            <textarea id="message" name="message" placeholder="Опишіть ваше звернення" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Я погоджуюся з обробкою персональних даних *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Надіслати повідомлення</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Як нас знайти</h2>
+                <p class="section-subtitle">Наше офіс розташований у центрі Києва</p>
+            </div>
+            <div class="map-wrapper">
+                <div class="map-info">
+                    <h3>Схема проїзду</h3>
+                    <p><strong>Адреса:</strong> Україна, 04071, місто Київ, вул.Набережно-Лугова, будинок 4</p>
+                    <div class="map-details">
+                        <p><strong>Найближчі станції метро:</strong></p>
+                        <ul>
+                            <li>Станція метро "Золоті ворота" - 5 хвилин пішки</li>
+                            <li>Станція метро "Театральна" - 7 хвилин пішки</li>
+                        </ul>
+                        <p><strong>Автобуси:</strong> №24, №114</p>
+                        <p><strong>Тролейбуси:</strong> №6, №16, №18</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.758453307348!2d30.493001005532786!3d50.44559969084092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5e3a9e8c0d%3A0x6c8b3e3a9e8c0d0!2z0YPQuy4g0J3QsNCx0LXRgdC10L3QvtGB0LrQsNGPLdCU0LPR0LPQvtCy0LAsINCa0LjQtdCyLCAwNDA3MSwg0KPQutGA0LDRl9C90LA!5e0!3m2!1suk!2sua!4v1754402701394!5m2!1suk!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Навігація</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="services.html">Трейдерська діяльність</a></li>
+                        <li><a href="documents.html">Нормативні документи</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Контакти</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Україна, 04071, місто Київ, вул.Набережно-Лугова, будинок 4</p>
+                        <p><i class="fas fa-phone"></i> +380508128221</p>
+                        <p><i class="fas fa-clock"></i> Режим роботи: пн-пт 09:00 — 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ТОВ «АКУМ ЕНЕРДЖІ». Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
